@@ -22,6 +22,16 @@ export default defineConfig({
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')
     }
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Bootstrap still relies on legacy Sass APIs; suppress its third-party
+        // deprecation noise so our own build output stays readable.
+        quietDeps: true,
+        silenceDeprecations: ['import', 'global-builtin', 'color-functions']
+      }
+    }
+  },
   build: {
     outDir: 'de.perdoctus.streamdeck.homeassistant.sdPlugin',
     rollupOptions: {

@@ -64,7 +64,7 @@
             Specify path or URL to customized display configuration. Unsupported!
             <a
               target="_blank"
-              href="https://raw.githubusercontent.com/cgiesche/streamdeck-homeassistant/master/public/config/default-display-config.yml"
+              href="https://raw.githubusercontent.com/stephenthecold/streamdeck-homeassistant/legacy-3.5.x/public/config/default-display-config.yml"
               >Example</a
             >.
           </div>
@@ -441,7 +441,7 @@ function updateManifest() {
   console.log('Updating manifest.')
   axios
     .get(
-      'https://cdn.jsdelivr.net/gh/cgiesche/streamdeck-homeassistant@master/public/config/manifest.yml'
+      'https://cdn.jsdelivr.net/gh/stephenthecold/streamdeck-homeassistant@legacy-3.5.x/public/config/manifest.yml'
     )
     .then((response) => (this.manifest = yaml.load(response.data)))
     .catch((error) => console.log(`Failed to download updated manifest.yml: ${error}`))
