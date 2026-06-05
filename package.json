@@ -15,16 +15,16 @@
     "@mdi/font": "^7.4.47",
     "@mdi/js": "^7.4.47",
     "@popperjs/core": "^2.11.8",
-    "axios": "1.13.2",
+    "axios": "^1.17.0",
     "bootstrap": "^5.3.8",
     "core-js": "^3.46.0",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.2.0",
     "nunjucks": "3.2.4",
     "snapsvg-cjs": "^0.0.6",
     "vue": "^3.5.24"
   },
   "devDependencies": {
-    "@elgato/cli": "^1.5.1",
+    "@elgato/cli": "^1.7.4",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@rushstack/eslint-patch": "^1.14.1",
     "@vitejs/plugin-vue": "^6.0.1",
@@ -35,5 +35,8 @@
     "prettier": "^3.6.2",
     "sass": "^1.93.3",
     "vite": "^7.2.2"
+  },
+  "overrides": {
+    "js-yaml": "^4.2.0"
   }
 }
